@@ -68,10 +68,12 @@
 
   <section id="contact" class="py-20 px-4 max-w-3xl mx-auto">
     <h2 class="text-3xl font-bold mb-8 text-center">Связаться с нами</h2>
-    <form class="space-y-4">
-      <input type="text" placeholder="Ваше имя" class="w-full px-4 py-3 border rounded">
-      <input type="email" placeholder="Email" class="w-full px-4 py-3 border rounded">
-      <textarea placeholder="Сообщение" rows="4" class="w-full px-4 py-3 border rounded"></textarea>
+    <form action="https://formsubmit.co/aka.zest.2@gmail.com" method="POST" class="space-y-4">
+      <input type="text" name="name" required placeholder="Ваше имя" class="w-full px-4 py-3 border rounded">
+      <input type="email" name="email" required placeholder="Email" class="w-full px-4 py-3 border rounded">
+      <textarea name="message" required placeholder="Сообщение" rows="4" class="w-full px-4 py-3 border rounded"></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://aka-zest.github.io/apka/#contact">
       <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition">Отправить</button>
     </form>
     <div class="mt-10">
@@ -80,7 +82,7 @@
   </section>
 
   <footer class="bg-black text-white text-center py-8 mt-12">
-    <p>&copy; 2025 ARKA. Все права защищены.</p>
+    <p>&copy; 2024 ARKA. Все права защищены.</p>
   </footer>
 
   <style>
